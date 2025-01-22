@@ -1,0 +1,51 @@
+{
+  "jokes": [
+    {
+      "varient": "joke",
+      "content": "Why did the engineer cross the road? To optimize the traffic flow!"
+    },
+    {
+      "varient": "joke",
+      "content": "An engineer can solve any problem... except for finding a perfect spouse!"
+    },
+    {
+      "varient": "joke",
+      "content": "Why did the engineer cross the road? To optimize the traffic flow!"
+    },
+    {
+      "varient": "joke",
+      "content": "An engineer can solve any problem... except for finding a perfect spouse!"
+    },
+    {
+      "id": 5,
+      "content": "Why do programmers prefer dark mode? Because light attracts bugs!",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 6,
+      "content": "What do you call 8 hobbits? A hobbyte!",
+      "ratings": [],
+      "average_rating": 0
+    }
+  ],
+  "quotes": [],
+  "facts": [
+    {
+      "varient": "fact",
+      "content": "The first electronic computer ENIAC weighed more than 27 tons and took up 1800 square feet."
+    },
+    {
+      "varient": "fact",
+      "content": "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion of the iron."
+    },
+    {
+      "varient": "fact",
+      "content": "The first electronic computer ENIAC weighed more than 27 tons and took up 1800 square feet."
+    },
+    {
+      "varient": "fact",
+      "content": "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion of the iron."
+    }
+  ]
+}

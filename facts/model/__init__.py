@@ -1,0 +1,1 @@
+from .quotes import Quotes, QuoteSchema,JokeSchema,FactSchema

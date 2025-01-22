@@ -1,0 +1,112 @@
+{
+  "jokes": [
+    {
+      "id": 1,
+      "content": "Why do programmers prefer dark mode? Because light attracts bugs!",
+      "ratings": [
+        4
+      ],
+      "average_rating": 4.0
+    },
+    {
+      "id": 2,
+      "content": "What fields are engineers found in? Everything except engineering!",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 3,
+      "content": "Why do Java developers wear glasses? Because they can't C#!",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 4,
+      "content": "How many programmers does it take to screw in a light bulb? None, that's a hardware problem.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 5,
+      "content": "Debugging: Being the detective in a crime movie where you are also the murderer.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 6,
+      "content": "Why do programmers hate nature? It has too many bugs.",
+      "ratings": [],
+      "average_rating": 0
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "content": "The only way to do great work is to love what you do. - Steve Jobs",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 2,
+      "content": "Success is not final; failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 3,
+      "content": "In the middle of every difficulty lies opportunity. - Albert Einstein",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 4,
+      "content": "Life is 10% what happens to us and 90% how we react to it. - Charles R. Swindoll",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 5,
+      "content": "Don\u00e2\u20ac\u2122t let yesterday take up too much of today. - Will Rogers",
+      "ratings": [],
+      "average_rating": 0
+    }
+  ],
+  "facts": [
+    {
+      "id": 1,
+      "content": "The first computer virus was created in 1986.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 2,
+      "content": "Python is named after Monty Python, not the snake.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 3,
+      "content": "The first computer weighed more than 27 tons.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 4,
+      "content": "Over 90% of the world\u00e2\u20ac\u2122s currency exists only on computers.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 5,
+      "content": "The first email was sent by Ray Tomlinson to himself.",
+      "ratings": [],
+      "average_rating": 0
+    },
+    {
+      "id": 6,
+      "content": "Bill Gates wrote the first computer program at 13 years old.",
+      "ratings": [],
+      "average_rating": 0
+    }
+  ]
+}
