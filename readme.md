@@ -79,16 +79,17 @@ Invoke-RestMethod -Uri https://maximus723.hackclub.app/rate/1 -Method POST -Body
 This project is something I’m super proud of! Here’s the story:
 
 1. I started following a YouTube video to build a Flask API, but it quickly went wrong. 😬
-2. Backtracked, made changes, and initially used a list to store jokes, quotes, and facts when testing locally. But I realized the list wasn’t updating on POST requests.
+2. Backtracked,started from scratch reading a blog  made changes as per needs and guidelines blog was about transaction api mine was a joke api, and initially used a list to store jokes, quotes, and facts when testing locally. But I realized the list wasn’t updating on POST requests.
 3. Switched to using a `.json` file for storage. Later, I added POST functionality for ratings so users could rate jokes, quotes, and facts.
 4. Tried hosting on Railway, but it failed. Debugged like crazy, but no luck.
-5. Moved to Vercel, but discovered Vercel can’t store `.json` files as persistent data. After some head-scratching, migrated to Firebase for the database.
-6. Hosted the API on Hack Club Nest after consulting documentation and Slack channels and helpful people. (Nest is awesome! and the helpers too)
+5. Moved to Vercel, but discovered Vercel can’t store `.json` files as persistent data. After some head-scratching, migrated to Firebase for the database tried vercel again but after 5 hrs of headscratching back to the same point.
+6. so i Hosted the API on Hack Club Nest after consulting documentation and Slack channels and helpful people. (Nest is awesome! and the helpers too)
 
 ## Challenges Faced 🛠️
 
 - tried using Swagger for documentationit didn’t work—it kept getting messed up tried using ai for help to debug still same to did a simple webage as documentation.
 - Debugging issues with `.env` variables on Vercel and hosting on it was headcracking so hosted on nest .
+- hosting flask api on vercela nd railwauy is messy.
 
 
 Finally, I created this index page with simple instructions for accessing the API.
