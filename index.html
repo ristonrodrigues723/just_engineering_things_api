@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Engineering Things</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .endpoint-card {
+            margin-bottom: 1.5rem;
+        }
+        pre {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to My Raspapi YSWS Submission</h1>
+            <p>
+                This is my entry for the RaspAPI ysws program-a lighthearted yet practical API crafted for engineers and messy ppl like me man it trying to get it live made me half mad. 
+                It provides a fun collection of engineering-themed jokes, facts, and quotes, while also letting users contribute their own jokes or rate existing ones. 
+            </p>
+            <p>
+                Fully tested on both PowerShell and Linux terminals, this API is designed for simplicity, reliability, and a bit of engineering humor! Dive in and see how it works. (I tested it multiple times 40-50 times both locally and rhe nest hosted version)
+            </p>
+        </div>
+        
+
+        <div class="row">
+
+            <div class="col-md-4 endpoint-card">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=GET+Jokes" class="card-img-top" alt="GET Jokes">
+                    <div class="card-body">
+                        <h5 class="card-title">GET /jokes</h5>
+                        <p class="card-text">Fetch a list of all jokes available in the database. Not including my current state</p>
+                        <a href="https://maximus723.hackclub.app/jokes" class="btn btn-primary" target="_blank">Try It</a>
+                        <h6 class="mt-3">Example:</h6>
+                        <pre>curl -X GET https://maximus723.hackclub.app/jokes</pre>
+                        <h6>PowerShell Example:</h6>
+                        <pre>
+Invoke-RestMethod -Uri https://maximus723.hackclub.app/jokes -Method GET
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GET /quotes -->
+            <div class="col-md-4 endpoint-card">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=GET+Quotes" class="card-img-top" alt="GET Quotes">
+                    <div class="card-body">
+                        <h5 class="card-title">GET /quotes</h5>
+                        <p class="card-text">Retrieve a list of all quotes available in the database. Need to attribute and put one by me</p>
+                        <a href="https://maximus723.hackclub.app/quotes" class="btn btn-primary" target="_blank">Try It</a>
+                        <h6 class="mt-3">Example:</h6>
+                        <pre>curl -X GET https://maximus723.hackclub.app/quotes</pre>
+                        <h6>PowerShell Example:</h6>
+                        <pre>
+Invoke-RestMethod -Uri https://maximus723.hackclub.app/quotes -Method GET
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GET /facts -->
+            <div class="col-md-4 endpoint-card">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=GET+Facts" class="card-img-top" alt="GET Facts">
+                    <div class="card-body">
+                        <h5 class="card-title">GET /facts</h5>
+                        <p class="card-text">Fetch interesting facts from the database. </p>
+                        <a href="https://maximus723.hackclub.app/facts" class="btn btn-primary" target="_blank">Try It</a>
+                        <h6 class="mt-3">Example:</h6>
+                        <pre>curl -X GET https://maximus723.hackclub.app/facts</pre>
+                        <h6>PowerShell Example:</h6>
+                        <pre>
+Invoke-RestMethod -Uri https://maximus723.hackclub.app/facts -Method GET
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST /jokes -->
+            <div class="col-md-4 endpoint-card">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=POST+Jokes" class="card-img-top" alt="POST Jokes">
+                    <div class="card-body">
+                        <h5 class="card-title">POST /jokes</h5>
+                        <p class="card-text">Submit a new joke to the database.</p>
+                        <h6>Example:</h6>
+                        <pre>
+curl -X POST https://maximus723.hackclub.app/jokes \
+-H "Content-Type: application/json" \
+-d '{"content": "Why did the chicken cross the road? To get to the other side!"}'
+                        </pre>
+                        <h6>PowerShell Example:</h6>
+                        <pre>
+Invoke-RestMethod -Uri https://maximus723.hackclub.app/jokes -Method POST -Body @{
+    content = "Why did the chicken cross the road? To get to the other side!"
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST /rate/{content_id} -->
+            <div class="col-md-4 endpoint-card">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200?text=POST+Rating" class="card-img-top" alt="POST Rating">
+                    <div class="card-body">
+                        <h5 class="card-title">POST /rate/{content_id}</h5>
+                        <p class="card-text">Rate a joke by providing a content ID and a rating (1-5).</p>
+                        <h6>Example:</h6>
+                        <pre>
+curl -X POST https://maximus723.hackclub.app/rate/1 \
+-H "Content-Type: application/json" \
+-d '{"rating": 5}'
+                        </pre>
+                        <h6>PowerShell Example:</h6>
+                        <pre>
+Invoke-RestMethod -Uri https://maximus723.hackclub.app/rate/1 -Method POST -Body @{
+    rating = 5
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Jokes API | Built with ❤️ by Maximus723</p>
+    </footer>
+</body>
+</html>
